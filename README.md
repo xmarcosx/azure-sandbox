@@ -1,12 +1,16 @@
 # Azure Sandbox
 
 ```sh
-sudo su
-curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
-curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
+sudo su;
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -;
+curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list;
 
-sudo apt update
-sudo apt install msodbcsql17
+sudo apt update;
+sudo apt install msodbcsql17;
+```
+
+```sh
+dbt run-operation stage_external_sources;
 ```
 
 ```sql
