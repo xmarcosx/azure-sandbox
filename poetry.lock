@@ -239,7 +239,7 @@ pyodbc = ">=4.0.32,<4.1.0"
 
 [[package]]
 name = "dbt-synapse"
-version = "1.0.1"
+version = "1.0.2b1"
 description = "An Azure Synapse adpter plugin for dbt (data build tool)"
 category = "main"
 optional = false
@@ -765,7 +765,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ce2141bdf6e10fe5e6b3e85b7d6bb0ed7de68f71cd2e13bf3af6246c40f7c44a"
+content-hash = "ce33f89eb7120e177c3345cf588c942063f5afcd758b917341a3ddef9acbe3df"
 
 [metadata.files]
 agate = [
@@ -937,7 +937,8 @@ dbt-sqlserver = [
     {file = "dbt-sqlserver-1.0.0.tar.gz", hash = "sha256:eef870e93c42d9751d0b637e7c7d05be0645c3318af3609d8ca73f37cdef015a"},
 ]
 dbt-synapse = [
-    {file = "dbt_synapse-1.0.1-py3-none-any.whl", hash = "sha256:977a795a8372b23e5f6bbf5c786642d959043c45d777849bc988feff4af6ba40"},
+    {file = "dbt-synapse-1.0.2b1.tar.gz", hash = "sha256:3a6e67992045b5fcb38ccfb0ff44b65d5243931ebcc0f5b256789260ac2e07e6"},
+    {file = "dbt_synapse-1.0.2b1-py3-none-any.whl", hash = "sha256:ddb9dd094f44d6d35f146cbdaba1bb4077b95ea19364dd8273a14792f256b130"},
 ]
 future = [
     {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},

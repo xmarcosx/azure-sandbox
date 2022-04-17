@@ -1,0 +1,12 @@
+analytics:
+  target: dev
+  outputs:
+    dev:
+      type: synapse
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: "{{ env_var('SQLENDPOINT') }}"
+      database: analytics
+      port: 1433
+      schema: analytics
+      user: sqladminuser
+      password: "{{ env_var('SQLPASSWORD') }}"

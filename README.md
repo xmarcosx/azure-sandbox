@@ -1,5 +1,14 @@
 # Azure Sandbox
 
+```sh
+sudo su
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
+
+sudo apt update
+sudo apt install msodbcsql17
+```
+
 ```sql
 SELECT
     JSON_VALUE(jsonContent, '$.studentUniqueId')    AS student_unique_id,
