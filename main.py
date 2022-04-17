@@ -25,7 +25,7 @@ edfi_data = [
 
 service_client = DataLakeServiceClient(
     account_url="{}://{}.dfs.core.windows.net".format("https", "dagster"),
-    credential="",
+    credential=os.getenv("AZURE_STORAGE_KEY"),
 )
 file_system_client = service_client.get_file_system_client(file_system="dagster")
 directory_client = file_system_client.get_directory_client("dagster")
